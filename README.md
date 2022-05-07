@@ -21,13 +21,7 @@
 
 ## About The Project
 
-I made this library to help speed up the initial data processing. Its task is to quickly and clearly present the data structure and to approximate possible problems that will have to be solved.
-
-PyPI link :
-
-```sh
-https://test.pypi.org/project/dsanalizer/
-```
+Simple Calculator with Flask, HTML and CSS.
 
 <!-- Image about -->
 <p align="center">
@@ -38,6 +32,7 @@ https://test.pypi.org/project/dsanalizer/
 
 - [Python](https://www.python.org)
 - [Flask](https://palletsprojects.com/p/flask/)
+- [pytest](https://docs.pytest.org/en/7.1.x/contents.html)
 - [HTML]
 - [CSS]
 
