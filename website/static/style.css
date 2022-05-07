@@ -1,0 +1,94 @@
+:root {
+    /* ROW */
+    --row_width: 400px;
+    --row_height: 80px;
+
+    /* CELL */
+    --cell_margin: 10px;
+    --cell_width: calc(var(--row_width) - 2 * var(--cell_margin) / 5 - 2 * var(--cell_margin));
+    --cell_height: calc(var(--row_height) - 2 * var(--cell_margin));
+
+    /* SCREEN */
+    --screen_border_width: 2px;
+    --screen_margin: 10px;
+    --screen_width: calc(var(--row_width) - 2 * var(--screen_border_width) - 2 * var(--screen_margin));
+    --screen_height: calc(1.5 * var(--row_height) - 2 * var(--screen_border_width) - var(--screen_margin));
+
+    /* COLORS */
+    --calculator_color: #9fa9a3;
+    --screen_color: #f0f0f0;
+    --border_color: black;
+    --button_color: #f0f0f0;
+  }
+
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator {
+    border-style: solid;
+    border-width: var(--screen_border_width);
+    border-color: var(--border_color);
+    background-color: var(--calculator_color);
+  }
+
+  .rows-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    width: var(--row_width);
+    height: var(--row_height);
+    display: flex;
+    flex-direction: row;
+  }
+  .row:first-child {
+    margin-top: var(--cell_margin);
+  }
+  .row:last-child {
+    margin-bottom: var(--cell_margin);
+  }
+
+  .screen {
+    margin: var(--screen_margin) var(--screen_margin) 0 var(--screen_margin);
+    width: var(--screen_width);
+    height: var(--screen_height);
+    border-style: solid;
+    border-width: var(--screen_border_width);
+    border-color: var(--border_color);
+    background-color: var(--screen_color);
+    font-size: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    background-color: var(--button_color);
+    margin: var(--cell_margin);
+    width: var(--cell_width);
+    height: var(--cell_height);
+    font-size: 20px;
+  }
+  button:first-child {
+    margin-left: calc(2 * var(--cell_margin));
+  }
+  button:last-child {
+    margin-right: calc(2 * var(--cell_margin));
+  }

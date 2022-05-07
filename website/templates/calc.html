@@ -1,0 +1,51 @@
+{% extends "base.html" %}{% block title %}Calculator{% endblock title %}{% block content %}
+<div class="container">
+    <div class="calculator">
+        <div class="screen">{{ screen }}</div>
+        <div class="rows-container">
+            <form class="row" method="POST">
+                <button type="submit" name="%"><i class="fa-solid fa-percent"></i></button>
+                <button type="submit" name="7"><i class="fa-solid fa-7"></i></button>
+                <button type="submit" name="8"><i class="fa-solid fa-8"></i></button>
+                <button type="submit" name="9"><i class="fa-solid fa-9"></i></button>
+                <button type="submit" name="/"><i class="fa-solid fa-divide"></i></button>
+            </form>
+            
+            <form class="row" method="POST">
+                <button type="submit" name="+-"><i class="fa-solid fa-plus-minus"></i></button>
+                <button type="submit" name="4"><i class="fa-solid fa-4"></i></button>
+                <button type="submit" name="5"><i class="fa-solid fa-5"></i></button>
+                <button type="submit" name="6"><i class="fa-solid fa-6"></i></button>
+                <button type="submit" name="x"><i class="fa-solid fa-xmark"></i></button>
+            </form>
+
+            <form class="row" method="POST">
+                <button type="submit" name="c"><i class="fa-solid fa-c"></i></button>
+                <button type="submit" name="1"><i class="fa-solid fa-1"></i></button>
+                <button type="submit" name="2"><i class="fa-solid fa-2"></i></button>
+                <button type="submit" name="3"><i class="fa-solid fa-3"></i></button>
+                <button type="submit" name="+"><i class="fa-solid fa-plus"></i></i></button>
+            </form>
+
+            <form class="row" method="POST">
+                <button type="submit" name="√">√</button>
+                <button type="submit" name="0"><i class="fa-solid fa-0"></i></button>
+                <button type="submit" name=".">.</button>
+                <button type="submit" name="="><i class="fa-solid fa-equals"></i></button>
+                <button type="submit" name="-"><i class="fa-solid fa-minus"></i></button>
+            </form>
+
+            <form class="row" method="POST">
+                <button type="submit" name="2√">2√</button>
+                <button type="submit" name="**">**</button>
+                <button type="submit" name="x**2">x**2</button>
+                <button type="submit" name="mod">mod</button>
+                <button type="submit" name="<--"><--</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content %}
