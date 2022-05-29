@@ -1,5 +1,5 @@
 import pytest
-from ..website.Calculator import Calculator
+from website.Calculator import Calculator
 
 
 class TestCalculator:
